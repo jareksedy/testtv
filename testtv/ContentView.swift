@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel = ViewModel()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            List {
+                NavigationLink("Volume", destination: VolumeView(viewModel: viewModel))
+                NavigationLink("Keys", destination: KeyView(viewModel: viewModel))
+            }
+            .listStyle(.sidebar)
+            
+            VStack {
+                Text("Connected: \(viewModel.clientKey ?? "")")
+            }
+            .alert("Please accept prompt on the TV.", isPresented: $viewModel.showPromptAlert) {}
         }
-        .padding()
     }
 }
 

@@ -7,19 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA2CF79B2B37D58400E838E6 /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2CF79A2B37D58400E838E6 /* VolumeView.swift */; };
+		CA2CF79D2B37D64200E838E6 /* KeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2CF79C2B37D64200E838E6 /* KeyView.swift */; };
 		CAA8202B2B3742A000C0D279 /* testtvApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8202A2B3742A000C0D279 /* testtvApp.swift */; };
 		CAA8202D2B3742A000C0D279 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8202C2B3742A000C0D279 /* ContentView.swift */; };
 		CAA8202F2B3742A100C0D279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAA8202E2B3742A100C0D279 /* Assets.xcassets */; };
 		CAA820322B3742A100C0D279 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAA820312B3742A100C0D279 /* Preview Assets.xcassets */; };
+		CAA8205E2B3742C200C0D279 /* WebOSSoundOutputType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8203B2B3742C200C0D279 /* WebOSSoundOutputType.swift */; };
+		CAA8205F2B3742C200C0D279 /* WebOSResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8203C2B3742C200C0D279 /* WebOSResponseType.swift */; };
+		CAA820602B3742C200C0D279 /* WebOSRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8203D2B3742C200C0D279 /* WebOSRequestType.swift */; };
+		CAA820612B3742C200C0D279 /* WebOSTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8203F2B3742C200C0D279 /* WebOSTarget.swift */; };
+		CAA820622B3742C200C0D279 /* WebOSKeyTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA820402B3742C200C0D279 /* WebOSKeyTarget.swift */; };
+		CAA820632B3742C200C0D279 /* WebOSTargetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA820422B3742C200C0D279 /* WebOSTargetExtension.swift */; };
+		CAA820642B3742C200C0D279 /* WebOSKeyTargetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA820432B3742C200C0D279 /* WebOSKeyTargetExtension.swift */; };
+		CAA820652B3742C200C0D279 /* WebOSTargetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA820452B3742C200C0D279 /* WebOSTargetProtocol.swift */; };
+		CAA820662B3742C200C0D279 /* WebOSKeyTargetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA820462B3742C200C0D279 /* WebOSKeyTargetProtocol.swift */; };
+		CAA820672B3742C200C0D279 /* WebOSResponseVolumeStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA820492B3742C200C0D279 /* WebOSResponseVolumeStatus.swift */; };
+		CAA820682B3742C200C0D279 /* WebOSResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8204A2B3742C200C0D279 /* WebOSResponse.swift */; };
+		CAA820692B3742C200C0D279 /* WebOSResponseDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8204B2B3742C200C0D279 /* WebOSResponseDevice.swift */; };
+		CAA8206A2B3742C200C0D279 /* WebOSResponseApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8204C2B3742C200C0D279 /* WebOSResponseApplication.swift */; };
+		CAA8206B2B3742C200C0D279 /* WebOSResponsePayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8204D2B3742C200C0D279 /* WebOSResponsePayload.swift */; };
+		CAA8206C2B3742C200C0D279 /* WebOSRequestSigned.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8204F2B3742C200C0D279 /* WebOSRequestSigned.swift */; };
+		CAA8206D2B3742C200C0D279 /* WebOSRequestManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA820502B3742C200C0D279 /* WebOSRequestManifest.swift */; };
+		CAA8206E2B3742C200C0D279 /* WebOSRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA820512B3742C200C0D279 /* WebOSRequest.swift */; };
+		CAA8206F2B3742C200C0D279 /* WebOSRequestPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA820522B3742C200C0D279 /* WebOSRequestPayload.swift */; };
+		CAA820702B3742C200C0D279 /* WebOSRequestSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA820532B3742C200C0D279 /* WebOSRequestSignature.swift */; };
+		CAA820712B3742C200C0D279 /* WebOSClientExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA820552B3742C200C0D279 /* WebOSClientExtension.swift */; };
+		CAA820722B3742C200C0D279 /* MessageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA820572B3742C200C0D279 /* MessageExtension.swift */; };
+		CAA820732B3742C200C0D279 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA820582B3742C200C0D279 /* StringExtension.swift */; };
+		CAA820742B3742C200C0D279 /* CodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA820592B3742C200C0D279 /* CodableExtension.swift */; };
+		CAA820752B3742C200C0D279 /* WebOSClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8205A2B3742C200C0D279 /* WebOSClient.swift */; };
+		CAA820762B3742C200C0D279 /* WebOSClientDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8205C2B3742C200C0D279 /* WebOSClientDelegate.swift */; };
+		CAA820772B3742C200C0D279 /* WebOSClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8205D2B3742C200C0D279 /* WebOSClientProtocol.swift */; };
+		CAA820792B3742EB00C0D279 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA820782B3742EB00C0D279 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA2CF79A2B37D58400E838E6 /* VolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
+		CA2CF79C2B37D64200E838E6 /* KeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyView.swift; sourceTree = "<group>"; };
 		CAA820272B3742A000C0D279 /* testtv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testtv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA8202A2B3742A000C0D279 /* testtvApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testtvApp.swift; sourceTree = "<group>"; };
 		CAA8202C2B3742A000C0D279 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CAA8202E2B3742A100C0D279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAA820312B3742A100C0D279 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CAA820332B3742A100C0D279 /* testtv.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testtv.entitlements; sourceTree = "<group>"; };
+		CAA8203B2B3742C200C0D279 /* WebOSSoundOutputType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOSSoundOutputType.swift; sourceTree = "<group>"; };
+		CAA8203C2B3742C200C0D279 /* WebOSResponseType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOSResponseType.swift; sourceTree = "<group>"; };
+		CAA8203D2B3742C200C0D279 /* WebOSRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOSRequestType.swift; sourceTree = "<group>"; };
+		CAA8203F2B3742C200C0D279 /* WebOSTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOSTarget.swift; sourceTree = "<group>"; };
+		CAA820402B3742C200C0D279 /* WebOSKeyTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOSKeyTarget.swift; sourceTree = "<group>"; };
+		CAA820422B3742C200C0D279 /* WebOSTargetExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOSTargetExtension.swift; sourceTree = "<group>"; };
+		CAA820432B3742C200C0D279 /* WebOSKeyTargetExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOSKeyTargetExtension.swift; sourceTree = "<group>"; };
+		CAA820452B3742C200C0D279 /* WebOSTargetProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOSTargetProtocol.swift; sourceTree = "<group>"; };
+		CAA820462B3742C200C0D279 /* WebOSKeyTargetProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOSKeyTargetProtocol.swift; sourceTree = "<group>"; };
+		CAA820492B3742C200C0D279 /* WebOSResponseVolumeStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOSResponseVolumeStatus.swift; sourceTree = "<group>"; };
+		CAA8204A2B3742C200C0D279 /* WebOSResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOSResponse.swift; sourceTree = "<group>"; };
+		CAA8204B2B3742C200C0D279 /* WebOSResponseDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOSResponseDevice.swift; sourceTree = "<group>"; };
+		CAA8204C2B3742C200C0D279 /* WebOSResponseApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOSResponseApplication.swift; sourceTree = "<group>"; };
+		CAA8204D2B3742C200C0D279 /* WebOSResponsePayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOSResponsePayload.swift; sourceTree = "<group>"; };
+		CAA8204F2B3742C200C0D279 /* WebOSRequestSigned.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOSRequestSigned.swift; sourceTree = "<group>"; };
+		CAA820502B3742C200C0D279 /* WebOSRequestManifest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOSRequestManifest.swift; sourceTree = "<group>"; };
+		CAA820512B3742C200C0D279 /* WebOSRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOSRequest.swift; sourceTree = "<group>"; };
+		CAA820522B3742C200C0D279 /* WebOSRequestPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOSRequestPayload.swift; sourceTree = "<group>"; };
+		CAA820532B3742C200C0D279 /* WebOSRequestSignature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOSRequestSignature.swift; sourceTree = "<group>"; };
+		CAA820552B3742C200C0D279 /* WebOSClientExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOSClientExtension.swift; sourceTree = "<group>"; };
+		CAA820572B3742C200C0D279 /* MessageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageExtension.swift; sourceTree = "<group>"; };
+		CAA820582B3742C200C0D279 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		CAA820592B3742C200C0D279 /* CodableExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableExtension.swift; sourceTree = "<group>"; };
+		CAA8205A2B3742C200C0D279 /* WebOSClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOSClient.swift; sourceTree = "<group>"; };
+		CAA8205C2B3742C200C0D279 /* WebOSClientDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOSClientDelegate.swift; sourceTree = "<group>"; };
+		CAA8205D2B3742C200C0D279 /* WebOSClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOSClientProtocol.swift; sourceTree = "<group>"; };
+		CAA820782B3742EB00C0D279 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +110,12 @@
 		CAA820292B3742A000C0D279 /* testtv */ = {
 			isa = PBXGroup;
 			children = (
+				CAA820392B3742C200C0D279 /* WebOSClient */,
 				CAA8202A2B3742A000C0D279 /* testtvApp.swift */,
 				CAA8202C2B3742A000C0D279 /* ContentView.swift */,
+				CA2CF79A2B37D58400E838E6 /* VolumeView.swift */,
+				CA2CF79C2B37D64200E838E6 /* KeyView.swift */,
+				CAA820782B3742EB00C0D279 /* ViewModel.swift */,
 				CAA8202E2B3742A100C0D279 /* Assets.xcassets */,
 				CAA820332B3742A100C0D279 /* testtv.entitlements */,
 				CAA820302B3742A100C0D279 /* Preview Content */,
@@ -67,6 +129,119 @@
 				CAA820312B3742A100C0D279 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CAA820392B3742C200C0D279 /* WebOSClient */ = {
+			isa = PBXGroup;
+			children = (
+				CAA8203A2B3742C200C0D279 /* Types */,
+				CAA8203E2B3742C200C0D279 /* Targets */,
+				CAA820472B3742C200C0D279 /* Models */,
+				CAA820542B3742C200C0D279 /* Extensions */,
+				CAA8205A2B3742C200C0D279 /* WebOSClient.swift */,
+				CAA8205B2B3742C200C0D279 /* Protocols */,
+			);
+			path = WebOSClient;
+			sourceTree = "<group>";
+		};
+		CAA8203A2B3742C200C0D279 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				CAA8203B2B3742C200C0D279 /* WebOSSoundOutputType.swift */,
+				CAA8203C2B3742C200C0D279 /* WebOSResponseType.swift */,
+				CAA8203D2B3742C200C0D279 /* WebOSRequestType.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		CAA8203E2B3742C200C0D279 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				CAA8203F2B3742C200C0D279 /* WebOSTarget.swift */,
+				CAA820402B3742C200C0D279 /* WebOSKeyTarget.swift */,
+				CAA820412B3742C200C0D279 /* Extensions */,
+				CAA820442B3742C200C0D279 /* Protocols */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		CAA820412B3742C200C0D279 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CAA820422B3742C200C0D279 /* WebOSTargetExtension.swift */,
+				CAA820432B3742C200C0D279 /* WebOSKeyTargetExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CAA820442B3742C200C0D279 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CAA820452B3742C200C0D279 /* WebOSTargetProtocol.swift */,
+				CAA820462B3742C200C0D279 /* WebOSKeyTargetProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CAA820472B3742C200C0D279 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CAA820482B3742C200C0D279 /* Response */,
+				CAA8204E2B3742C200C0D279 /* Request */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CAA820482B3742C200C0D279 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				CAA820492B3742C200C0D279 /* WebOSResponseVolumeStatus.swift */,
+				CAA8204A2B3742C200C0D279 /* WebOSResponse.swift */,
+				CAA8204B2B3742C200C0D279 /* WebOSResponseDevice.swift */,
+				CAA8204C2B3742C200C0D279 /* WebOSResponseApplication.swift */,
+				CAA8204D2B3742C200C0D279 /* WebOSResponsePayload.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		CAA8204E2B3742C200C0D279 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				CAA8204F2B3742C200C0D279 /* WebOSRequestSigned.swift */,
+				CAA820502B3742C200C0D279 /* WebOSRequestManifest.swift */,
+				CAA820512B3742C200C0D279 /* WebOSRequest.swift */,
+				CAA820522B3742C200C0D279 /* WebOSRequestPayload.swift */,
+				CAA820532B3742C200C0D279 /* WebOSRequestSignature.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		CAA820542B3742C200C0D279 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CAA820552B3742C200C0D279 /* WebOSClientExtension.swift */,
+				CAA820562B3742C200C0D279 /* Helpers */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CAA820562B3742C200C0D279 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CAA820572B3742C200C0D279 /* MessageExtension.swift */,
+				CAA820582B3742C200C0D279 /* StringExtension.swift */,
+				CAA820592B3742C200C0D279 /* CodableExtension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CAA8205B2B3742C200C0D279 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CAA8205C2B3742C200C0D279 /* WebOSClientDelegate.swift */,
+				CAA8205D2B3742C200C0D279 /* WebOSClientProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +315,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAA8202D2B3742A000C0D279 /* ContentView.swift in Sources */,
+				CAA820682B3742C200C0D279 /* WebOSResponse.swift in Sources */,
+				CAA820672B3742C200C0D279 /* WebOSResponseVolumeStatus.swift in Sources */,
+				CAA820632B3742C200C0D279 /* WebOSTargetExtension.swift in Sources */,
+				CAA820662B3742C200C0D279 /* WebOSKeyTargetProtocol.swift in Sources */,
+				CAA820622B3742C200C0D279 /* WebOSKeyTarget.swift in Sources */,
+				CAA820792B3742EB00C0D279 /* ViewModel.swift in Sources */,
+				CAA8206A2B3742C200C0D279 /* WebOSResponseApplication.swift in Sources */,
+				CAA8206D2B3742C200C0D279 /* WebOSRequestManifest.swift in Sources */,
+				CAA8206E2B3742C200C0D279 /* WebOSRequest.swift in Sources */,
+				CAA820762B3742C200C0D279 /* WebOSClientDelegate.swift in Sources */,
+				CAA820652B3742C200C0D279 /* WebOSTargetProtocol.swift in Sources */,
+				CA2CF79D2B37D64200E838E6 /* KeyView.swift in Sources */,
+				CAA8205E2B3742C200C0D279 /* WebOSSoundOutputType.swift in Sources */,
+				CAA820722B3742C200C0D279 /* MessageExtension.swift in Sources */,
+				CAA820712B3742C200C0D279 /* WebOSClientExtension.swift in Sources */,
+				CAA820642B3742C200C0D279 /* WebOSKeyTargetExtension.swift in Sources */,
 				CAA8202B2B3742A000C0D279 /* testtvApp.swift in Sources */,
+				CAA8205F2B3742C200C0D279 /* WebOSResponseType.swift in Sources */,
+				CAA820772B3742C200C0D279 /* WebOSClientProtocol.swift in Sources */,
+				CAA8206C2B3742C200C0D279 /* WebOSRequestSigned.swift in Sources */,
+				CAA820692B3742C200C0D279 /* WebOSResponseDevice.swift in Sources */,
+				CAA820602B3742C200C0D279 /* WebOSRequestType.swift in Sources */,
+				CA2CF79B2B37D58400E838E6 /* VolumeView.swift in Sources */,
+				CAA820742B3742C200C0D279 /* CodableExtension.swift in Sources */,
+				CAA8206B2B3742C200C0D279 /* WebOSResponsePayload.swift in Sources */,
+				CAA820732B3742C200C0D279 /* StringExtension.swift in Sources */,
+				CAA820612B3742C200C0D279 /* WebOSTarget.swift in Sources */,
+				CAA820752B3742C200C0D279 /* WebOSClient.swift in Sources */,
+				CAA8206F2B3742C200C0D279 /* WebOSRequestPayload.swift in Sources */,
+				CAA820702B3742C200C0D279 /* WebOSRequestSignature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
