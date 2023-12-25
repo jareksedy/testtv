@@ -7,12 +7,25 @@
 
 import SwiftUI
 
+fileprivate enum Constants {
+    static let width: CGFloat = 360
+    static let height: CGFloat = 200
+}
+
 struct MouseView: View {
-    @State private var mouseLocation: NSPoint = NSPoint(x: 320, y: 240) {
+    @State private var mouseLocation: NSPoint = NSPoint(x: Constants.width / 2, y: Constants.height / 2) {
         didSet {
-            dx = mouseLocation.x - 320
-            dy = mouseLocation.y - 240
+            dx = (mouseLocation.x - Constants.width / 2) / 12
+            dy = (mouseLocation.y - Constants.height / 2) / 12
             viewModel.tv?.sendKey(.move(dx: Int(dx), dy: Int(dy)))
+            
+            if dy > 13 {
+                viewModel.tv?.sendKey(.scroll(dx: 0, dy: -10))
+            }
+            
+            if dy < -13 {
+                viewModel.tv?.sendKey(.scroll(dx: 0, dy: 10))
+            }
         }
     }
     @State private var isDragged: Bool = false
@@ -40,7 +53,7 @@ struct MouseView: View {
             
             Rectangle()
                 .foregroundColor(.green.opacity(0.05))
-                .frame(width: 640, height: 480)
+                .frame(width: Constants.width, height: Constants.height)
                 .contentShape(Rectangle())
             
             Circle()
@@ -58,7 +71,7 @@ struct MouseView: View {
                 )
             
         }
-        .frame(width: 640, height: 480)
+        .frame(width: Constants.width, height: Constants.height)
         .simultaneousGesture(
             DragGesture(coordinateSpace: .named("MouseView"))
                 .onChanged { value in
@@ -90,6 +103,9 @@ struct MouseView: View {
             }
         }
         .coordinateSpace(name: "MouseView")
+        .onAppear {
+            viewModel.tv?.sendKey(.click)
+        }
     }
 }
 
