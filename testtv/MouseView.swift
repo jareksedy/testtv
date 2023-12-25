@@ -12,6 +12,7 @@ struct MouseView: View {
         didSet {
             dx = mouseLocation.x - 320
             dy = mouseLocation.y - 240
+            viewModel.tv?.sendKey(.move(dx: Int(dx), dy: Int(dy)))
         }
     }
     @State private var isDragged: Bool = false
@@ -51,7 +52,7 @@ struct MouseView: View {
                 .overlay(
                     Circle()
                         .foregroundColor(.green)
-                        .scaleEffect(isTapped ? 0.25 : 0)
+                        .scaleEffect(isTapped ? 0.175 : 0)
                         .opacity(isTapped ? 0.25 : 1)
                         .position(x: mouseLocation.x, y: mouseLocation.y)
                 )
@@ -75,13 +76,14 @@ struct MouseView: View {
         )
         .onTapGesture() { value in
             mouseLocation = value
-            withAnimation(.bouncy(duration: 0.25, extraBounce: 0.3)) {
+            viewModel.tv?.sendKey(.click)
+            withAnimation(.bouncy(duration: 0.25)) {
                 isDragged = true
                 isTapped = true
             }
             
             Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { timer in
-                withAnimation(.bouncy(duration: 0.25, extraBounce: 0.3)) {
+                withAnimation(.bouncy(duration: 0.25)) {
                     isDragged = false
                     isTapped = false
                 }
