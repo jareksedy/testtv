@@ -14,6 +14,7 @@ struct ContentView: View {
             List {
                 NavigationLink("Volume", destination: VolumeView(viewModel: viewModel))
                 NavigationLink("Keys", destination: KeyView(viewModel: viewModel))
+                NavigationLink("Mouse", destination: MouseView(viewModel: viewModel))
             }
             .listStyle(.sidebar)
             

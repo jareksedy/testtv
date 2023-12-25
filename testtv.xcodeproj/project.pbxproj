@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CA2CF79B2B37D58400E838E6 /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2CF79A2B37D58400E838E6 /* VolumeView.swift */; };
 		CA2CF79D2B37D64200E838E6 /* KeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2CF79C2B37D64200E838E6 /* KeyView.swift */; };
+		CA5A73712B384F6B00546EDA /* MouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A73702B384F6B00546EDA /* MouseView.swift */; };
+		CAA148B62B39678C0016CA4C /* Touch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA148B52B39678C0016CA4C /* Touch.swift */; };
 		CAA8202B2B3742A000C0D279 /* testtvApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8202A2B3742A000C0D279 /* testtvApp.swift */; };
 		CAA8202D2B3742A000C0D279 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8202C2B3742A000C0D279 /* ContentView.swift */; };
 		CAA8202F2B3742A100C0D279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAA8202E2B3742A100C0D279 /* Assets.xcassets */; };
@@ -45,6 +47,8 @@
 /* Begin PBXFileReference section */
 		CA2CF79A2B37D58400E838E6 /* VolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
 		CA2CF79C2B37D64200E838E6 /* KeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyView.swift; sourceTree = "<group>"; };
+		CA5A73702B384F6B00546EDA /* MouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseView.swift; sourceTree = "<group>"; };
+		CAA148B52B39678C0016CA4C /* Touch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Touch.swift; sourceTree = "<group>"; };
 		CAA820272B3742A000C0D279 /* testtv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testtv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA8202A2B3742A000C0D279 /* testtvApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testtvApp.swift; sourceTree = "<group>"; };
 		CAA8202C2B3742A000C0D279 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 				CAA8202A2B3742A000C0D279 /* testtvApp.swift */,
 				CAA8202C2B3742A000C0D279 /* ContentView.swift */,
 				CA2CF79A2B37D58400E838E6 /* VolumeView.swift */,
+				CA5A73702B384F6B00546EDA /* MouseView.swift */,
+				CAA148B52B39678C0016CA4C /* Touch.swift */,
 				CA2CF79C2B37D64200E838E6 /* KeyView.swift */,
 				CAA820782B3742EB00C0D279 /* ViewModel.swift */,
 				CAA8202E2B3742A100C0D279 /* Assets.xcassets */,
@@ -328,6 +334,8 @@
 				CAA820652B3742C200C0D279 /* WebOSTargetProtocol.swift in Sources */,
 				CA2CF79D2B37D64200E838E6 /* KeyView.swift in Sources */,
 				CAA8205E2B3742C200C0D279 /* WebOSSoundOutputType.swift in Sources */,
+				CA5A73712B384F6B00546EDA /* MouseView.swift in Sources */,
+				CAA148B62B39678C0016CA4C /* Touch.swift in Sources */,
 				CAA820722B3742C200C0D279 /* MessageExtension.swift in Sources */,
 				CAA820712B3742C200C0D279 /* WebOSClientExtension.swift in Sources */,
 				CAA820642B3742C200C0D279 /* WebOSKeyTargetExtension.swift in Sources */,
